@@ -1,6 +1,7 @@
-/*  TestBits.cpp : A program to test whether certain bits are set or not.
-	Author		 : Mayank Kr.
-	Date		 : 01-03-2014
+/*  
+        TestBits.cpp : A program to test whether certain bits are set or not If a bit is '1', it is set, otherwise not.
+	Author       : Mayank Kr
+	Date	     : 01-03-2014
 */
 
 #include <iostream>
