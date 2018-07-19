@@ -9,7 +9,7 @@
 #include <limits>
 
 bool test(int, int);
-int get_int();
+int get_int();        // Integer input validation.
 
 int main()
 {
