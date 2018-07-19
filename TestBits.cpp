@@ -6,8 +6,10 @@
 
 #include <iostream>
 #include <cstdlib>
+#include <limits>
 
 bool test(int, int);
+int get_int();
 
 int main()
 {
@@ -17,9 +19,9 @@ int main()
     int n, pos;
 
     cout << "Enter a number : ";
-    cin >> n;
+    n = get_int();
     cout << "Enter bit position(0-15) to test : ";
-    cin >> pos;
+    pos = get_int();
 
     if(test(n, pos)) {
         cout << "Bit at position " << pos << " is set.\n\n";
@@ -41,4 +43,27 @@ bool test(int num, int pos)
     };
 
     return (num & masks[pos]);  // masks[pos] is the appropriate mask chosen based on the bit position specified by the user.
+}
+
+int get_int()
+{
+     using std::cin;
+     using std::cout;
+     using std::numeric_limits;
+     using std::streamsize;
+
+     int number;
+
+     while(true) {
+        if (!(cin >> number)) {
+	    cin.clear();
+	    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+	    cout << "Enter a valid number!\nEnter a number : ";
+        }
+	else {
+	    break;
+	}
+    }
+
+    return number;
 }
