@@ -1,5 +1,5 @@
 /*  
-        TestBits.cpp : A program to test whether certain bits are set or not. If a bit is '1', it is set, otherwise not.
+        TestBits.cpp : A program to test whether certain bits are set or not. If a bit is '1', it is set.
 	Author       : Mayank Kr
 	Date	     : 01-03-2014
 */
