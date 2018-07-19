@@ -58,7 +58,8 @@ int get_int()
         if (!(cin >> number)) {
 	    cin.clear();
 	    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-	    cout << "Enter a valid number!\nEnter a number : ";
+	    cout << "Enter a valid number!\n
+            cout << "Enter a number : ";
         }
 	else {
 	    break;
