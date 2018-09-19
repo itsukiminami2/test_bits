@@ -8,14 +8,16 @@
 #include <cstdlib>
 #include <limits>
 
+using std::cin;
+using std::cout;
+using std::numeric_limits;
+using std::streamsize;
+
 bool test(int, int);
 int get_int();        // Integer input validation.
 
 int main()
 {
-    using std::cin;
-    using std::cout;
-
     int n, pos;
 
     cout << "Enter a number : ";
@@ -47,11 +49,6 @@ bool test(int num, int pos)
 
 int get_int()
 {
-     using std::cin;
-     using std::cout;
-     using std::numeric_limits;
-     using std::streamsize;
-
      int number;
 
      while(true) {
